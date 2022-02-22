@@ -15,3 +15,36 @@
     transform: rotate(360deg);
   }
 }
+
+.contactContainer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+form {
+  padding: 1.5rem;
+}
+
+button {
+  width: 225px;
+  height: 60px;
+  background-color: #fc542f;
+  color: #ffff;
+}
+input {
+  width: 90%;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+label {
+  display: block;
+  margin: 1.6rem 0rem 1rem 0rem;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 1rem;
+  margin: 3px 0px;
+}
