@@ -48,3 +48,41 @@ label {
   font-size: 1rem;
   margin: 3px 0px;
 }
+
+section p {
+  color: #fc542f;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h2 {
+  flex: 0 0 90%;
+}
+
+header a {
+  font-size: 1.8rem;
+  padding-right: 2rem;
+  color: #fc542f;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex: 90% 0 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+}

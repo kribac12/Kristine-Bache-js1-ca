@@ -1,22 +1,28 @@
-const url = "https://api-football-standings.azharimm.site/leagues";
+const url = "https://rickandmortyapi.com/api/character";
 const factsContainer = document.querySelector(".container");
 
 //Make a call to your API URL.
-async function getLeagues() {
+async function getCharacter() {
   try {
     const response = await fetch(url);
     const results = await response.json();
     console.log(results.data);
 
-    const leagueFacts = results.data;
+    const characterFacts = results.results;
 
     factsContainer.classList.remove("loader");
 
-    for (let i = 0; i < leagueFacts.length; i++) {
-      factsContainer.innerHTML += `<div class="container"><h4>League: ${leagueFacts[i].name}</h4>
-     <p>Abbreviation: ${leagueFacts[i].abbr}</p>
-     <p>Id: ${leagueFacts[i].id}</p>
-     <p>Slug: ${leagueFacts[i].slug}</p></div>`;
+    for (let i = 0; i < characterFacts.length; i++) {
+      if (i === 12) {
+        break;
+      }
+
+      factsContainer.innerHTML += `<a href="details.html?id?=${characterFacts.id}" class="characterCard">
+     <h4>Name: ${characterFacts[i].name}</h4>
+     <h5>Status: ${characterFacts[i].status}</h5>
+     <img src = "${characterFacts[i].image}"</img>
+     <p> View more </p>
+     </div>`;
     }
   } catch (error) {
     console.log(error);
@@ -24,7 +30,7 @@ async function getLeagues() {
   }
 }
 
-getLeagues();
+getCharacter();
 
 //Loop through the results and create HTML for each result.
 
