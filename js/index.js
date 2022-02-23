@@ -13,10 +13,10 @@ async function getLeagues() {
     factsContainer.classList.remove("loader");
 
     for (let i = 0; i < leagueFacts.length; i++) {
-      factsContainer.innerHTML += `<div class="container"><h4>League: ${leagueFacts[i].name}</h4></div>`;
-      factsContainer.innerHTML += `<div class="container"><p>Abbreviation: ${leagueFacts[i].abbr}</p></div>`;
-      factsContainer.innerHTML += `<div class="container"><p>Id: ${leagueFacts[i].id}</p></div>`;
-      factsContainer.innerHTML += `<div class="container"><p>Slug: ${leagueFacts[i].slug}</p></div>`;
+      factsContainer.innerHTML += `<div class="container"><h4>League: ${leagueFacts[i].name}</h4>
+     <p>Abbreviation: ${leagueFacts[i].abbr}</p>
+     <p>Id: ${leagueFacts[i].id}</p>
+     <p>Slug: ${leagueFacts[i].slug}</p></div>`;
     }
   } catch (error) {
     console.log(error);
