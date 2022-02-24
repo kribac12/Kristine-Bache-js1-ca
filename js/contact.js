@@ -50,7 +50,7 @@ function validateForm(event) {
   }
   form.reset();
 
-  message.innerHTML = '<div class="message">    Your message has been sent!</div>';
+  message.innerHTML = '<div class="message">Your message has been sent!</div>';
 }
 
 form.addEventListener("submit", validateForm);

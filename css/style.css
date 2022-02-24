@@ -1,10 +1,48 @@
+/*GLOBAL STYLES*/
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+header a {
+  font-size: 1.5rem;
+  padding-right: 4.5rem;
+  background-color: #fc542f;
+  color: #ffff;
+  margin: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex: 90% 0 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/*Loader inspired by loader used in lessons*/
+
 .loader {
   border: 10px solid #fc542f;
   border-top: 10px solid #f3f3f3;
   border-radius: 50%;
   width: 3.5rem;
   height: 3.5rem;
-  animation: spin 2s linear infinite;
+  animation: spin 3s linear infinite;
 }
 
 @keyframes spin {
@@ -15,6 +53,8 @@
     transform: rotate(360deg);
   }
 }
+
+/*CONTACT PAGE*/
 
 .contactContainer {
   max-width: 900px;
@@ -31,6 +71,7 @@ button {
   background-color: #fc542f;
   color: #ffff;
 }
+
 input {
   width: 90%;
   padding: 1rem;
@@ -49,6 +90,15 @@ label {
   margin: 3px 0px;
 }
 
+.message {
+  font-size: 2rem;
+  color: #ffff;
+  background-color: #fc542f;
+  width: 400px;
+}
+
+/*INDEX PAGE*/
+
 .container p {
   color: #fc542f;
   font-size: 1.5rem;
@@ -56,38 +106,6 @@ label {
   font-weight: bold;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-}
-
 h2 {
   flex: 0 0 90%;
-}
-
-header a {
-  font-size: 1.5rem;
-  padding-right: 4.5rem;
-  color: #fc542f;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-}
-
-section {
-  display: flex;
-  flex: 90% 0 0;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.message {
-  font-size: 2rem;
-  color: green;
 }
