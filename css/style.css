@@ -49,7 +49,7 @@ label {
   margin: 3px 0px;
 }
 
-section p {
+.container p {
   color: #fc542f;
   font-size: 1.5rem;
   text-decoration: underline;
@@ -66,8 +66,8 @@ h2 {
 }
 
 header a {
-  font-size: 1.8rem;
-  padding-right: 2rem;
+  font-size: 1.5rem;
+  padding-right: 4.5rem;
   color: #fc542f;
   font-weight: bold;
   text-transform: uppercase;
@@ -85,4 +85,9 @@ section {
   flex-direction: row;
   gap: 2rem;
   padding: 2rem;
+}
+
+.message {
+  font-size: 2rem;
+  color: green;
 }
