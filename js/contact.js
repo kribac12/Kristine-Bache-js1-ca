@@ -48,9 +48,10 @@ function validateForm(event) {
   } else {
     emailError.style.display = "block";
   }
-  form.reset();
 
   message.innerHTML = '<div class="message">Your message has been sent!</div>';
+
+  form.reset();
 }
 
 form.addEventListener("submit", validateForm);

@@ -16,13 +16,7 @@ async function getCharacter() {
       }
 
       const characterDetails = characterFacts[i];
-
-      factsContainer.innerHTML += `<a href="/details.html?id=${characterDetails.id}" class="characterCard">
-     <h4>Name: ${characterDetails.name}</h4>
-     <h5>Status: ${characterDetails.status}</h5>
-     <img src = "${characterDetails.image}"</img>
-     <p> View more </p>
-     </a>`;
+      createHtml(characterDetails);
     }
   } catch (error) {
     console.log(error);
@@ -31,3 +25,12 @@ async function getCharacter() {
 }
 
 getCharacter();
+
+function createHtml(characterDetails) {
+  factsContainer.innerHTML += `<a href="/details.html?id=${characterDetails.id}" class="characterCard">
+  <h4>Name: ${characterDetails.name}</h4>
+  <h5>Status: ${characterDetails.status}</h5>
+  <img src = "${characterDetails.image}"</img>
+  <p> View more </p>
+  </a>`;
+}
