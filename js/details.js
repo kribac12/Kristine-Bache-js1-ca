@@ -16,7 +16,7 @@ async function fetchCharacter() {
 
     showCharacter(characterDetails);
   } catch (error) {
-    resultsContainer.innerHTML = alert("Error with the API.");
+    resultsContainer.innerHTML = alert("Unfortunately, there was an error with the API.");
   }
 }
 
